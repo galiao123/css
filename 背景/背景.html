@@ -3,8 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        div{
+            width: 1000px;
+            height: 700px;
+            border: 1px solid red;
+            background-image: url("image/img.png");
+        /*    默认平铺*/
+        }
+        .div1{
+            background-repeat: repeat-x;
+        /*    水平平铺*/
+        }
+        .div2{
+            background-repeat: no-repeat;
+        }
+    </style>
 </head>
 <body>
-
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
 </body>
 </html>

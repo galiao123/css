@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .demo a{
+            float:left;
+            display: block;
+            height:50px;
+            width:50px;
+            border-radius: 10px;
+            background: aquamarine;
+            text-align: center;
+            text-decoration: none;
+            color:gainsboro;
+            margin-right: 6px;
+            font:bold 20px/50px Arial;
+        }
+    /*选中存在id属性的元素
+    标签[属性]{}
+    =绝对等于
+    *=包含
+    ^=以这个开头
+    $=以这个结束
+
+    */
+        a[id]{
+            background: red;
+        }
+        a[class="links item"]{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<p class="demo">
+    <a href="https://baidu.com" class="links item first" id="first">1</a>
+    <a href="" class="links item active" target="_blank" title="test">2</a>
+    <a href="image/123.html" class="links item">3</a>
+    <a href="image/123.png" class="links item">4</a>
+    <a href="">5</a>
+    <a href="">6</a>
+    <a href="">7</a>
+    <a href="">8</a>
+    <a href="">9</a>
+    <a href="">10</a>
+
+
+</p>
+</body>
+</html>

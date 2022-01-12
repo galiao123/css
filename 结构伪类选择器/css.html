@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    /*ul的第一个子元素*/
+    ul li:first-child{
+        background: green;
+    }
+    /*ul的最后一个子元素*/
+    ul li:last-child{
+        background: red;
+    }
+    /*选中p1：定位到父元素，选择当前的第n个元素,并且是当前元素（必须是p）才生效*/
+    p:nth-child(1){
+        background: blue;
+    }
+    /*选中父元素下的p元素的第二个*/
+    p:nth-of-type(2){
+        background: blue;
+    }
+    /*选中引用文字，文字变化*/
+    a:hover{
+        background: black;
+    }
+    </style>
+</head>
+<body>
+<a href="">12345</a>
+<p class="name">p1</p>
+<p>p2</p>
+<p>p3</p>
+<ul>
+    <li>li1</li>
+    <li>li2</li>
+    <li>li3</li>
+</ul>
+</body>
+</html>

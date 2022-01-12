@@ -1,0 +1,39 @@
+/*利用div标签去规范范围*/
+#nav{
+    width:500px
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 35px;
+    background: red url("image/down.png") 300px 1px no-repeat;
+}
+/*
+list-style:每行前面的符号
+
+
+
+*/
+ul{
+    background: #a0a0a0;
+}
+ul li{
+    height: 30px;
+    list-style: none;
+    text-indent: 1em;
+    background-image: url("image/down.png");
+    background-size: 25px 25px;
+    background-repeat:no-repeat;
+    background-position:200px ;
+}
+a{
+    text-decoration: none;
+    color:#000000;
+    font-size: 14px;
+}
+a:hover{
+    color:orange;
+    text-decoration: underline;
+
+}

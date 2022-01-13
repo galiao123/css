@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    相对定位relative
+相对于自己原来的位置进行偏移
+绝对定位absolute
+1.没有父级元素定位的前提下，相对于浏览器定位
+2.假设父级元素存在定位，我们通常相当于父级元素进行偏移
+3.在父级元素范围内移动
+固定定位 fixed
+-->
+    <style>
+        div{
+            margin: 10px;
+            padding: 5px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+        #father{
+            border:1px solid #666;
+            padding: 0;
+        }
+        #first{
+            background-color: #C850C0;
+            border:1px dashed #006600;
+            position: relative;;
+            top: -20px;
+            left:20px;
+            bottom:-10px;
+            right:20px;
+        }
+        #second{
+            background-color: #C850C0;
+            border:1px dashed #006600;
+        }
+        #third{
+            background-color: #C850C0;
+            border:1px dashed #006600;
+        }
+    </style>
+</head>
+<body>
+<div id="father">
+    <div id="first">第一个盒子</div>
+    <div id="second">第二个盒子</div>
+    <div id="third">第三个盒子</div>
+</div>
+</body>
+</html>
